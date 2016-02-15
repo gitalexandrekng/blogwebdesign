@@ -1,0 +1,67 @@
+@import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz|Alegreya+Sans);
+
+#banniere{
+    height:410px;
+    width:100%;
+    background-image:url(../../images/banniere.jpg);
+    background-size:cover;
+
+    .fondu{
+        height:100%;
+        width:100%;
+        background:rgba(0,0,0,0.6);
+        display:flex;
+
+        #texte{
+            margin:auto;
+            text-align:center;
+
+            #titree{
+                font-family:"Yanone Kaffeesatz", sans-serif;
+                letter-spacing: 15px;
+                color:#FFF;
+                font-size:62px;
+                text-transform: uppercase;
+            }
+
+            #slogan{
+                color:white;
+                opacity:0.7;
+
+                #bubble{
+                    margin:auto;
+                    background-color:#FFF;
+                    width:5px;
+                    height:5px;
+                    border-radius:50%;
+                    margin-bottom:15px;
+                    margin-top:-3px;
+                }
+
+                hr{
+                    margin-top:15px;
+                    margin-bottom:0px;
+                    width:300px;
+                }
+            }
+
+            #flawless{
+                color:white;
+                font-size:26px;
+                letter-spacing:10px;
+                text-transform:uppercase;
+            }
+        }
+    }
+}
+
+#navig{
+    background-color:#252525;
+    width:100%;
+
+    #navig-container{
+        width:1200px;
+        margin:auto;
+        text-transform: uppercase;
+    }
+}
