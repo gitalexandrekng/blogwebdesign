@@ -1,23 +1,41 @@
 .element{
-	margin: 0;
-	display: inline-block; width: 100%;
-    -webkit-column-break-after: always;
-    break-inside: avoid-column;
-	word-wrap: break-word;
-	-webkit-hyphens: auto;
-	-moz-hyphens: auto;
-	hyphens: auto;
-    border:1px solid #EEE;
-    padding-left:15px;
-    padding-right:15px;
-    margin-top:15px;
-    transition:background 0.5s;
+	padding:10px;
+	margin-top:15px;
+  border:1px solid #DDD;
+  transition:background 0.5s;
 
     &:hover{
         background-color:#f9f9f9;
     }
 }
 
+.element:nth-child(5){
+	margin-bottom:15px;
+}
+
 #colonne{
-    columns:2;
+    columns:1;
+}
+
+#page-social{
+	height:90px;
+	background:#FFF;
+	width:1200px;
+	margin-top:50px;
+	margin-left:auto;
+	margin-right:auto;
+
+	#reseaux{
+
+		img{
+			width:40px;
+			height:auto;
+		}
+
+		li{
+			list-style-type: none;
+			display: inline-block;
+			margin-right:30px;
+		}
+	}
 }

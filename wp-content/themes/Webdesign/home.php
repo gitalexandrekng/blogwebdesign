@@ -15,28 +15,48 @@
 
 get_header(); ?>
 
+<div id="page-social">
+  <div class="row">
+    <div class="small-6 columns">
+      <p>Vous ne suivez pas encore mes superbes publications ?</p>
+      <ul id="reseaux">
+        <li><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/1.png"></li>
+        <li><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/2.png"></li>
+        <li><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/3.png"></li>
+        <li><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/4.png"></li>
+      </ul>
+    </div>
+    <div class="small-6 columns"></div>
+  </div>
+</div>
+
 <div id="page" role="main">
-	<div  id="colonne">
-	<?php if ( have_posts() ) : ?>
+	<div class="row">
+    <div class="small-8 columns">
+  	<?php if ( have_posts() ) : ?>
 
-		<?php /* Start the Loop */ ?>
-		<?php while ( have_posts() ) : the_post(); ?>
-			<?php get_template_part( 'template-parts/content', 'home', get_post_format() ); ?>
-		<?php endwhile; ?>
+  		<?php /* Start the Loop */ ?>
+  		<?php while ( have_posts() ) : the_post(); ?>
+  			<?php get_template_part( 'template-parts/content', 'home', get_post_format() ); ?>
+  		<?php endwhile; ?>
 
-		<?php else : ?>
-			<?php get_template_part( 'template-parts/content', 'none' ); ?>
+  		<?php else : ?>
+  			<?php get_template_part( 'template-parts/content', 'none' ); ?>
 
-		<?php endif; // End have_posts() check. ?>
+  		<?php endif; // End have_posts() check. ?>
 
-		<?php /* Display navigation to next/previous pages when applicable */ ?>
-		<?php if ( function_exists( 'foundationpress_pagination' ) ) { foundationpress_pagination(); } else if ( is_paged() ) { ?>
-			<nav id="post-nav">
-				<div class="post-previous"><?php next_posts_link( __( '&larr; Older posts', 'foundationpress' ) ); ?></div>
-				<div class="post-next"><?php previous_posts_link( __( 'Newer posts &rarr;', 'foundationpress' ) ); ?></div>
-			</nav>
-		<?php } ?>
+  		<?php /* Display navigation to next/previous pages when applicable */ ?>
+  		<?php if ( function_exists( 'foundationpress_pagination' ) ) { foundationpress_pagination(); } else if ( is_paged() ) { ?>
 
+  			<nav id="post-nav">
+  				<div class="post-previous"><?php next_posts_link( __( '&larr; Older posts', 'foundationpress' ) ); ?></div>
+  				<div class="post-next"><?php previous_posts_link( __( 'Newer posts &rarr;', 'foundationpress' ) ); ?></div>
+  			</nav>
+  		<?php } ?>
+  	</div>
+    <div class="small-4 columns">
+      <?php get_sidebar(); ?>
+    </div>
 	</div>
 
 

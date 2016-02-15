@@ -2,10 +2,7 @@
     background-color:white;
 
   @include grid-row();
-  margin-top: 3rem;
-  padding-left:15px;
-  padding-right:15px;
-  padding-bottom:15px;
+  margin-top: 1rem;
 
   .main-content {
     @include breakpoint(small) {
