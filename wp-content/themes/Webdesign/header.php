@@ -32,6 +32,20 @@
 
 	<?php do_action( 'foundationpress_layout_start' ); ?>
 
+	<div id="navig">
+					<div id="navig-container">
+							<nav id="site-navigation" class="main-navigation top-bar" role="navigation">
+						<div class="top-bar-left">
+							<?php foundationpress_top_bar_r(); ?>
+
+							<?php if ( ! get_theme_mod( 'wpt_mobile_menu_layout' ) || get_theme_mod( 'wpt_mobile_menu_layout' ) == 'topbar' ) : ?>
+								<?php get_template_part( 'template-parts/mobile-top-bar' ); ?>
+							<?php endif; ?>
+						</div>
+					</nav>
+					</div>
+	</div>
+
 	<div id="banniere">
 	    <div class="fondu">
 	        <div id="texte">
@@ -50,19 +64,6 @@
 			</div>
 		</div>
 
-		<div id="navig">
-            <div id="navig-container">
-                <nav id="site-navigation" class="main-navigation top-bar" role="navigation">
-        			<div class="top-bar-left">
-        				<?php foundationpress_top_bar_r(); ?>
-
-        				<?php if ( ! get_theme_mod( 'wpt_mobile_menu_layout' ) || get_theme_mod( 'wpt_mobile_menu_layout' ) == 'topbar' ) : ?>
-        					<?php get_template_part( 'template-parts/mobile-top-bar' ); ?>
-        				<?php endif; ?>
-        			</div>
-        		</nav>
-            </div>
-		</div>
 	</header>
 
 	<section class="container">

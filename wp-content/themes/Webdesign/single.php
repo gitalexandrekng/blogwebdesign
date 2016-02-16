@@ -7,36 +7,68 @@
  */
 
 get_header(); ?>
+<?php if ( function_exists('yoast_breadcrumb') )
+{yoast_breadcrumb('<p id="breadcrumbs">','</p>');} ?>
 
 <div id="single-post" role="main">
 
 <?php do_action( 'foundationpress_before_content' ); ?>
 <?php while ( have_posts() ) : the_post(); ?>
-	<div <?php post_class('main-content') ?> id="post-<?php the_ID(); ?>">
-		<header>
-			<h1 class="entry-title"><?php the_title(); ?></h1>
-			<?php foundationpress_entry_meta(); ?>
-		</header>
-		<?php do_action( 'foundationpress_post_before_entry_content' ); ?>
-		<div class="entry-content">
+	<div id="post-<?php the_ID(); ?>">
 
-		<?php if ( has_post_thumbnail() ) : ?>
-			<div class="row">
-				<div class="column">
-					<?php the_post_thumbnail( '', array('class' => 'th') ); ?>
-				</div>
-			</div>
-		<?php endif; ?>
+    <!--<div id="image-article">
+      <?php if ( has_post_thumbnail() ) : ?>
+        <div>
+          <div>
+            <?php the_post_thumbnail( '', array('class' => 'th') ); ?>
+          </div>
+        </div>
+      <?php endif; ?>
+    </div>-->
 
-		<?php the_content(); ?>
+    <?php
+    $src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array( 5600,1000 ), false, '' );
+    ?>
+
+    <div id="image-article" style="background-image:url(<?php echo $src[0]; ?>)">
+
+    </div>
+
+		<div class="petit-wrap">
+
+      <header>
+        <div id="titre">
+          <div class="bubbz"></div>
+          <hr>
+          <h1 class="entry-title"><?php the_title(); ?></h1>
+          <div class="bubbz"></div>
+          <hr>
+        </div>
+        <div class="text-center"><?php foundationpress_entry_meta(); ?></div>
+      </header>
+
+      <div class="row">
+
+        <div class="small-8 columns">
+
+      		<?php do_action( 'foundationpress_post_before_entry_content' ); ?>
+      		<div class="entry-content">
+
+      		<?php the_content(); ?>
+      		</div>
+      		<footer>
+      			<?php wp_link_pages( array('before' => '<nav id="page-nav"><p>' . __( 'Pages:', 'foundationpress' ), 'after' => '</p></nav>' ) ); ?>
+      			<p><?php the_tags(); ?></p>
+      		</footer>
+      		<?php do_action( 'foundationpress_post_before_comments' ); ?>
+      		<?php comments_template(); ?>
+      		<?php do_action( 'foundationpress_post_after_comments' ); ?>
+        </div>
+
+        <div class="small-4 columns">
+        </div>
+      </div>
 		</div>
-		<footer>
-			<?php wp_link_pages( array('before' => '<nav id="page-nav"><p>' . __( 'Pages:', 'foundationpress' ), 'after' => '</p></nav>' ) ); ?>
-			<p><?php the_tags(); ?></p>
-		</footer>
-		<?php do_action( 'foundationpress_post_before_comments' ); ?>
-		<?php comments_template(); ?>
-		<?php do_action( 'foundationpress_post_after_comments' ); ?>
 	</div>
 <?php endwhile;?>
 

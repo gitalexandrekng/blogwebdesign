@@ -27,7 +27,7 @@
 /* Tablet and desktop menu */
 .top-bar {
 
-    font-family: "Alegreya Sans", sans-serif;
+    font-family: "Yanone Kaffeesatz", sans-serif;
 
   .menu .home a {
     font-size: 1rem;
@@ -35,13 +35,14 @@
   }
 
   .menu a {
-    height: 45px;
+    height: 55px;
+    letter-spacing: 1px;
     line-height: 45px;
     color: #e6e6e6;
     padding-top: 0;
     padding-bottom: 0;
     font-weight: bold;
-    font-size: 1rem;
+    font-size: 1.4rem;
     line-height: 1;
     transition:background 0.3s ease-out;
 

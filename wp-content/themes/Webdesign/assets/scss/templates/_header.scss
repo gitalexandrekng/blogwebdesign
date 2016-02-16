@@ -1,10 +1,13 @@
 @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz|Alegreya+Sans);
 
 #banniere{
-    height:410px;
+    height:450px;
     width:100%;
     background-image:url(../../images/banniere.jpg);
-    background-size:cover;
+    background-attachment: fixed;
+    background-position: center 60px;
+    background-color: #000;
+    background-repeat:no-repeat;
 
     .fondu{
         height:100%;
@@ -58,6 +61,8 @@
 #navig{
     background-color:#252525;
     width:100%;
+    position:fixed;
+    z-index:10;
 
     #navig-container{
         width:1200px;
