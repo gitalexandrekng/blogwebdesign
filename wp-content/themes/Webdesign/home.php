@@ -17,16 +17,19 @@ get_header(); ?>
 
 <div id="page-social">
   <div class="row">
-    <div class="small-6 columns">
-      <p>Vous ne suivez pas encore mes superbes publications ?</p>
-      <ul id="reseaux">
-        <li><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/1.png"></li>
-        <li><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/2.png"></li>
-        <li><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/3.png"></li>
-        <li><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/4.png"></li>
-      </ul>
+    <div class="small-12 columns">
+        <div class="centered">
+            <div class="margin">
+                Vous ne suivez pas encore mes superbes publications?
+            </div>
+            <ul id="reseaux">
+              <li><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/1.png"></li>
+              <li><a href="http://instagram.com/alexandrek_" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/2.png"></a></li>
+              <li><a href="http://twitter.com/alexandrekng" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/4.png"></a></li>
+              <li><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/3.png"></li>
+            </ul>
+        </div>
     </div>
-    <div class="small-6 columns"></div>
   </div>
 </div>
 

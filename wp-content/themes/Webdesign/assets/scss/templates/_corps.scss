@@ -25,17 +25,26 @@
 	margin-left:auto;
 	margin-right:auto;
 
-	#reseaux{
+	.centered{
+		text-align:center;
 
-		img{
-			width:40px;
-			height:auto;
+		.margin{
+			margin-top:10px;
+			margin-bottom:5px;
 		}
 
-		li{
-			list-style-type: none;
-			display: inline-block;
-			margin-right:30px;
+		#reseaux{
+
+			img{
+				width:40px;
+				height:auto;
+			}
+
+			li{
+				list-style-type: none;
+				display: inline-block;
+				margin-right:30px;
+			}
 		}
 	}
 }

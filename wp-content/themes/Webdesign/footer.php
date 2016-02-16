@@ -19,7 +19,12 @@
 			</footer>
 		</div>
 
-		<div id="footer-one"></div>
+		<div id="footer-one">
+		    <div class="content">
+                <div id="title">Instagram</div>
+		        <iframe src="http://widget.websta.me/in/alexandrek_/?r=1&w=5&h=2&b=0&p=5" allowtransparency="true" frameborder="0" scrolling="no" style="border:none;overflow:hidden;width:525px; height: 210px" ></iframe> <!-- websta - websta.me -->
+		    </div>
+		</div>
         <div id="footer-mentions">
             <div class="contenu">
                 Copyright KONG Alexandre © - 2016 — <strong>Mentions légales</strong>
