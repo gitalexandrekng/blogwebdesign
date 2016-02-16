@@ -14,7 +14,7 @@
  */
 
 get_header(); ?>
-
+	<?php the_widget( 'WP_Widget_Search' ); ?> 
 <div id="page-social">
   <div class="row">
     <div class="small-12 columns">
