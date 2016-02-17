@@ -15,18 +15,24 @@ $src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array( 560
 ?>
 
 <div class="element" style="background-image:url(<?php echo $src['0']; ?>)">
-    <div id="post-<?php the_ID(); ?>" <?php post_class('blogpost-entry'); ?>>
-    	<header>
-    		<div class="text-center"><h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2></div>
+    <div class="fondu">
+      <div class="ccenter">
+        <div id="post-<?php the_ID(); ?>" <?php post_class('blogpost-entry'); ?>>
+          <header>
+            <div class="text-center"><h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2></div>
 
-    		<?php foundationpress_entry_meta(); ?>
-    	</header>
-    	<div class="entry-content">
+            <div class="text-center">
+              <?php foundationpress_entry_meta(); ?>
+            </div>
+          </header>
+          <!--<div class="entry-content">
 
-    		<?php the_content( __( 'Continue reading...', 'foundationpress' ) ); ?>
-    	</div>
-    	<footer>
-    		<?php $tag = get_the_tags(); if ( $tag ) { ?><p><?php the_tags(); ?></p><?php } ?>
-    	</footer>
+            <?php the_content( __( 'Continue reading...', 'foundationpress' ) ); ?>
+          </div>
+          <footer>
+            <?php $tag = get_the_tags(); if ( $tag ) { ?><p><?php the_tags(); ?></p><?php } ?>
+          </footer>-->
+        </div>
+      </div>
     </div>
 </div>
