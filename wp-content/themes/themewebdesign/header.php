@@ -19,6 +19,7 @@
 		<link rel="apple-touch-icon" sizes="114x114" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/icons/apple-touch-icon-114x114.png">
 		<link rel="apple-touch-icon" sizes="72x72" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/icons/apple-touch-icon-72x72.png">
 		<link rel="apple-touch-icon" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/icons/apple-touch-icon.png">
+        <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri() ?>/assets/components/owl.carousel/dist/assets/owl.carousel.min.css">
 		<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
@@ -34,7 +35,7 @@
 		<div class="header-custom">
             <div class="in">
                 <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" class="titreheader"><?php bloginfo( 'name' ); ?></a>
-                <span class="slogan">Webdesigner passioné et (presque) <strong>sans failles</strong></span>
+                <span class="slogan">Du webdesign passionnant et (presque) <strong>sans failles</strong></span>
                 <nav class="headmenuz row"><?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?></nav>
                 <div class="searchbar"><?php echo do_shortcode('[wpdreams_ajaxsearchlite]'); ?></div>
             </div>

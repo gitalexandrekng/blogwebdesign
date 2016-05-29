@@ -19,7 +19,12 @@
 		<?php do_action( 'foundationpress_layout_end' ); ?>
 
 		<?php include('custom-footer.php'); ?>
-
+<script src="<?php echo get_stylesheet_directory_uri() ?>/assets/components/owl.carousel/dist/owl.carousel.min.js"></script>
+<script type="text/javascript">
+	$("#slider-home").owlCarousel({
+		items:1,
+	});
+</script>
 <?php wp_footer(); ?>
 <?php do_action( 'foundationpress_before_closing_body' ); ?>
 </body>

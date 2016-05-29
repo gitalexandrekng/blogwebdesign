@@ -19,6 +19,7 @@
 }
 
 .newsletter-container{
+	margin-top:50px;
 	padding-top:50px;
 	padding-bottom:50px;
 	background:lighten(#CCC, 15%);
@@ -27,7 +28,7 @@
 	ul{
 		margin:0;
 		padding:0;
-		
+
 		li{
 			list-style-type: none;
 			display: inline-block;
