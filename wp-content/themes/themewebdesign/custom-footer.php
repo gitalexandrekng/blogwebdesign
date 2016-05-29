@@ -1,5 +1,10 @@
 <div class="newsletter-container">
-    Newsletter
+    Suivez-moi !
+    <ul>
+        <li><i class="fa fa-facebook"></i></li>
+        <li><i class="fa fa-twitter"></i></li>
+        <li><i class="fa fa-instagram"></i></li>
+    </ul>
 </div>
 <div class="footer-infos">
     Footer

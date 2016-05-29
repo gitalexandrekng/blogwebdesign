@@ -31,10 +31,20 @@
 	<?php do_action( 'foundationpress_layout_start' ); ?>
 
 	<header id="masthead" class="site-header-custom" role="banner">
-		<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" class="titreheader"><?php bloginfo( 'name' ); ?></a>
-        <span class="slogan">Webdesigner passioné et (presque) <strong>sans failles</strong></span>
-        <nav class="headmenuz row"><?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?></nav>
-        <div class="searchbar"><?php echo do_shortcode('[wpdreams_ajaxsearchlite]'); ?></div>
+		<div class="header-custom">
+            <div class="in">
+                <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" class="titreheader"><?php bloginfo( 'name' ); ?></a>
+                <span class="slogan">Webdesigner passioné et (presque) <strong>sans failles</strong></span>
+                <nav class="headmenuz row"><?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?></nav>
+                <div class="searchbar"><?php echo do_shortcode('[wpdreams_ajaxsearchlite]'); ?></div>
+            </div>
+            <div class="animation-container">
+                <div class="round-container">
+                    <div class="seconde-un"></div>
+                    <div class="seconde-deux"></div>
+                </div>
+            </div>
+		</div>
 	</header>
 
 	<section class="container">
