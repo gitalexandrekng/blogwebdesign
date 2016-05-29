@@ -32,6 +32,16 @@
 
 	<?php do_action( 'foundationpress_layout_start' ); ?>
 
+	<div id="banniere">
+	    <div class="fondu">
+	        <div id="texte">
+	            <div id="titree">Alexandre<span style="color:#e74c3c;font-weight:bold;">K</span></div>
+                <div id="slogan"><hr><div id="bubble"></div>Webdesign & more<hr><div id="bubble"></div></div>
+                <div id="flawless">Flawless<strong>Webdesigner</strong></div>
+	        </div>
+	    </div>
+	</div>
+
 	<div id="navig">
 					<div id="navig-container">
 							<nav id="site-navigation" class="main-navigation top-bar" role="navigation">
@@ -44,16 +54,6 @@
 						</div>
 					</nav>
 					</div>
-	</div>
-
-	<div id="banniere">
-	    <div class="fondu">
-	        <div id="texte">
-	            <div id="titree">Alexandre<span style="color:#e74c3c;font-weight:bold;">K</span></div>
-                <div id="slogan"><hr><div id="bubble"></div>Webdesign & more<hr><div id="bubble"></div></div>
-                <div id="flawless">Flawless<strong>Webdesigner</strong></div>
-	        </div>
-	    </div>
 	</div>
 
 	<header id="masthead" class="site-header" role="banner">
