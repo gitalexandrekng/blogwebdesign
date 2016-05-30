@@ -20,6 +20,7 @@
 		<link rel="apple-touch-icon" sizes="72x72" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/icons/apple-touch-icon-72x72.png">
 		<link rel="apple-touch-icon" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/icons/apple-touch-icon.png">
         <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri() ?>/assets/components/owl.carousel/dist/assets/owl.carousel.min.css">
+        <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri() ?>/assets/components/hover/css/hover-min.css">
 		<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
@@ -36,7 +37,6 @@
             <div class="in">
                 <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" class="titreheader"><?php bloginfo( 'name' ); ?></a>
                 <span class="slogan">Du webdesign passionnant et (presque) <strong>sans failles</strong></span>
-                <nav class="headmenuz row"><?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?></nav>
                 <div class="searchbar"><?php echo do_shortcode('[wpdreams_ajaxsearchlite]'); ?></div>
             </div>
             <div class="animation-container">
@@ -46,7 +46,23 @@
                 </div>
             </div>
 		</div>
+        <div class="socialmedia">
+            <ul>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+            </ul>
+        </div>
+        <div class="members">
+            <ul>
+                <li><a href="#"><i class="fa fa-sign-in"></i>Connexion</a></li>
+                <li><a href="#"><i class="fa fa-check"></i>Inscription</a></li>
+            </ul>
+        </div>
 	</header>
+    <nav class="headmenuz">
+        <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
+    </nav>
 
 	<section class="container">
 		<?php do_action( 'foundationpress_after_header' );

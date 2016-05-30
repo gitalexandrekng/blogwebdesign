@@ -15,19 +15,33 @@
 
 get_header(); ?>
 
+<!-- Slider
+====================-->
 <div class="slider-container">
     <div class="owl-carousel" id="slider-home">
-        <div class="item"><div class="in" style="background-image:url(<?php echo get_stylesheet_directory_uri() ?>/images/hands.jpg)">dezdzedzaed</div></div>
+        <div class="item">
+            <div class="in" style="background-image:url(<?php echo get_stylesheet_directory_uri() ?>/images/hands.jpg)">
+                <div class="fade">
+                    <div class="inzer">
+                        <h3>Titre slider</h3>
+                        <div class="texte">Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500</div>
+                        <a href="" class="butz hvr-sweep-to-top">En savoir plus</a>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="item"><div class="in" style="background-image:url(<?php echo get_stylesheet_directory_uri() ?>/images/header.jpg)">dezdzedzaed</div></div>
         <div class="item"><div class="in" style="background-image:url(<?php echo get_stylesheet_directory_uri() ?>/images/walpp.jpg)">dezdzedzaed</div></div>
     </div>
 </div>
 
-<div class="focus row">
+<!-- Focus
+=====================-->
+<!--<div class="focus row">
     <div class="large-4 columns"><div class="focus-in"></div></div>
     <div class="large-4 columns"><div class="focus-in"></div></div>
     <div class="large-4 columns"><div class="focus-in"></div></div>
-</div>
+</div>-->
 
 <div id="page" role="main">
 	<article class="main-content">
